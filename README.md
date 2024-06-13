@@ -27,4 +27,4 @@ Johnson, B. R., Ritter, Z., Fogleman, A., Markham, L., Stankov, T., Srinivasan, 
 
 Padgett, R. N., Bradshaw, M., Chen, Y., Jang, S. J., Shiba, K., Johnson, B. R., & VanderWeele, T. J. (2024). Global Flourishing Study Statistical Analyses Code. Center for Open Science, [Retrieve from https://osf.io/vbype/]
 
-Padgett, R. N., & Chen, Y. (2024). surveygenmod2: A SAS macro for estimating generalized linear model and conducting simple Wald-type tests under complex survey designs. ArXiv. [insert link]
+Padgett, R. N., & Chen, Y. (2024). surveygenmod2: A SAS macro for estimating generalized linear model and conducting simple Wald-type tests under complex survey designs. ArXiv. https://arxiv.org/abs/2406.07651
