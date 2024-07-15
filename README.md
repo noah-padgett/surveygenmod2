@@ -19,6 +19,18 @@ We needed a fast approximation of GLM's so that computational resources weren't 
 Implementations for estimating parameter variances using replicate weights are generally more precise, but were found to be significantly more computationally intensive given the sample sizes of the GFS. Prohibiting the utility of these methods.
 The macro by da Silva (2017) provided us the much needed groundwork for a Taylor series approximation of the parameter variance-covariance matrix.
 
+## Sample Code and Data
+
+The sample data used from the Global Flourishing Study were subset and perturbed compared to the full dataset. This subset of data are available in the object "sample-code/sample_data.Rds". The data can be accessed via R and resaved as a CSV file for use in SAS.
+
+```
+sample_data <- readRDS("sample_data.Rds")
+
+write.csv(sample_data, file="sample_data.csv", rownames=FALSE)
+```
+
+The folder "sample-code" also contains an example script for use in SAS along with the code for using the Wald-type test on a subset of regression coefficients.
+
 ## References
 
 da Silva, A. R. (2017). %SURVEYGENMOD Macro: An Alternative to Deal with Complex Survey Design for the GENMOD Procedure (Paper 268-2017). SAS Global Forum. [Retrieve on [2024-05-17] from https://support.sas.com/resources/papers/proceedings17/0268-2017.pdf]
