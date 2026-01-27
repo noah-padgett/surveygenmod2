@@ -319,7 +319,7 @@ proc iml;
 		 		if par<0 then par=0.00001;
 			 	par=choose(par<1E-10,1E-10,par);
 			 	g=sum(digamma(par+y)-digamma(par)+log(par)+1-log(par+mu)-(par+y)/(par+mu));
-			 	hess=sum(trigamma(par+y)-trigamma(par)+1/par2/(par+mu)+(y+par)/((par+mu)#(par+mu)));
+			 	hess=sum(trigamma(par+y)-trigamma(par)+1/par/(par+mu)+(y+par)/((par+mu)#(par+mu)));
 			 	hess=choose(hess=0,1E-23,hess); 
 			 	par0=par;
 			 	par=par0-inv(hess)*g;
