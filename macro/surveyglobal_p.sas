@@ -33,9 +33,9 @@ proc iml;
 	 idx=loc(element(vnames, x));
 	 L = L[ idx, 1:nvar];
 	 *L = L[ do( &xstart, &xend, 1) , 1:nvar];
-	 fstat = t(L * B) * inv( L * Bcov * t(L) ) * (L * B) ;
 	 df1 = nrow(L);
 	 df2 = df[1,1];
+	 fstat = t(L * B) * inv( L * Bcov * t(L) ) * (L * B) / df1;
 	 pvalue = 1-probf(fstat[1,1], df1, df2);
 
 	 label = {&label};
