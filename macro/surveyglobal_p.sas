@@ -35,8 +35,8 @@ proc iml;
 	 *L = L[ do( &xstart, &xend, 1) , 1:nvar];
 	 df1 = nrow(L);
 	 df2 = df[1,1];
-	 fstat = t(L * B) * inv( L * Bcov * t(L) ) * (L * B) ;
-	 pvalue = 1-probf(fstat[1,1]/ df1, df1, df2);
+	 fstat = t(L * B) * inv( L * Bcov * t(L) ) * (L * B) / df1;
+	 pvalue = 1-probf(fstat[1,1], df1, df2);
 
 	 label = {&label};
 	 imputation= {&mi_num};
